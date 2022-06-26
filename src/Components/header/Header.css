@@ -1,0 +1,91 @@
+header {
+  height: 80vh;
+  margin-top: 2rem;
+  overflow: hidden;
+}
+
+.header_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  height: 100%;
+}
+
+/* ======== CTA CSS ======== */
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.2rem;
+  /* justify-content: center; */
+}
+
+/* ======== Social CSS ======== */
+
+.header_social {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  gap: 0.8rem;
+  position: relative;
+  left: 0;
+  top: 4rem;
+}
+.header-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ======== Profile image css ======== */
+
+.me {
+  background: linear-gradient(var(--color-primary), transparent);
+  width: 15rem;
+  height: 20rem;
+  left: calc(50% - 9rem);
+  margin-top: 3rem;
+  border-radius: 12rem 12rem 0 0;
+  overflow: hidden;
+  padding: 1rem 0 0 0;
+}
+.me img {
+  margin: 2rem auto 0;
+  height: 100%;
+  width: 100%;
+}
+/* ======== Scroll Down css ======== */
+
+.scroll_down {
+  position: absolute;
+  right: -2.3rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+/*=============== media query for (Medium Devices)================= */
+@media screen and (max-width: 699px) {
+  .header_container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  header {
+    height: 100vh;
+  }
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header_social {
+    top: 1rem;
+  }
+}
+/*=============== media query for (Small Devices)================= */
+@media screen and (max-width: 441px) {
+  .header-content h1 {
+    font-size: 99%;
+  }
+}
